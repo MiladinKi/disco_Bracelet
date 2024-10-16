@@ -1,0 +1,136 @@
+.bracelets_container{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.bracelets_container_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 40px;
+    background-color: #fff;
+}
+
+.input_bracelets_container{
+    display: flex;
+    width: 40%;
+}
+
+.input_field{
+    flex: 1;
+    padding: 10px;
+    border: 0.3px solid #ccc;
+    border-radius: 4px 0px 0px 4px;
+   
+}
+
+.search_button{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+}
+
+.container_show_bracelets{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+    grid-auto-rows: 250px;
+    grid-gap: 20px;
+    margin: 20px;
+}
+
+.bracelets_overviewcard{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a5ddca;
+    border: 1px solid gray;
+    border-radius: 5px; */
+    position: relative; /* Omogućava da se unutrašnji elementi pozicioniraju relativno prema ovom elementu */
+    background-size: cover; /* Slika će pokriti ceo div */
+    background-position: center; /* Slika će biti centrirana */
+    background-repeat: no-repeat; /* Sprečava ponavljanje slike */
+    padding: 20px;
+    color: white; /* Boja teksta */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.bracelets_overviewcard::before {
+    content: "";
+    position: absolute; /* Postavlja pseudo-element preko celog roditeljskog elementa */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; /* Koristi istu pozadinsku sliku */
+    background-size: cover;
+    background-position: center;
+    z-index: 1; /* Ovaj z-index je niži od z-index-a teksta, tako da slika bude u pozadini */
+    opacity: 0.5; /* Po potrebi možeš dodati prozirnost */
+}
+
+.bracelet_name_container{
+    color: black;
+    background-color: rgb(13, 105, 48);
+    border-radius: 5px 5px 0px 0px;
+    border: 1px solid gray;
+    width: 100%;
+}
+
+.bracelet_name{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.bracelet_info{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px; */
+    position: relative; /* Pozicionira tekst relativno u odnosu na nadređeni element */
+    z-index: 2; /* Osigurava da tekst bude iznad slike */
+    background-color: rgba(0, 0, 0, 0.5); /* Prozirni crni overlay */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.add_button{
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid rgb(13, 105, 48);
+    font-weight: bold;
+}
+
+.form_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    align-content: center;
+    align-items: end;
+    flex-wrap: wrap;
+    height: 80%;
+    width: 80%;
+}
+
+.input_container{
+    display: grid;
+    width: 50%;
+}
+
+.input_label{
+    padding: 10px, 20px;
+    background-color: #ccc;
+    color: black;
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+}
+

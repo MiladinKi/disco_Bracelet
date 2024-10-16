@@ -1,0 +1,47 @@
+.container {
+  /* background-image: url('../public/images/kafic.jpg'); */
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas: "sidenav header"
+                        "sidenav main"
+                        "sidenav footer";
+}
+
+.sidenav_container{
+  grid-area: sidenav;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* .side_nav_list{
+  background-color: brown;
+} */
+
+.sidenav_list_item{
+  padding: 10px 20px 20px 10px;
+  color: black;
+  list-style-type: none;
+}
+
+.sidenav_list_item:hover{
+  background-color: whitesmoke;
+}
+
+.sidenav_list_item_navlink{
+  height: 100%;
+  width: 100%;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.sidenav_list_item_navlink:hover{
+  background-color: blue;
+  color:gray;
+  font-weight: bold;
+  cursor: pointer;
+}
